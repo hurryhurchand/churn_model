@@ -14,11 +14,11 @@ processed_data_config:
   test_data_csv:  data/processed/churn_test.csv
 
 mlflow_config:
-  artifacts_dir: artifacts/1
+  artifacts_dir: artifacts
   experiment_name: model_iteration1
   run_name: random_forest
   registered_model_name: random_forest_model
-  remote_server_uri: http://localhost:1234
+  remote_server_uri: http://0.0.0.0:1234
  
 random_forest: 
   max_depth: 10
