@@ -34,7 +34,7 @@ jobs:
         pytest -v
     - name: Deploy to Heroku
       env:
-        HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
+        HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_KEY }}
         HEROKU_APP_NAME: "churnmodelhurry2"
       if: github.ref == 'refs/heads/main' && job.status == 'success'
       run: |
