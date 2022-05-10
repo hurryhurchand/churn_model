@@ -14,7 +14,7 @@ processed_data_config:
   test_data_csv:  data/processed/churn_test.csv
 
 mlflow_config:
-  artifacts_dir: artifacts
+  artifacts_dir: artifacts/1
   experiment_name: model_iteration1
   run_name: random_forest
   registered_model_name: random_forest_model
